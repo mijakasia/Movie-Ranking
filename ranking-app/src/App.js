@@ -20,7 +20,7 @@ class App extends Component {
       <div className="App">
         <h1>Movies</h1>
         {this.state.movies.map(movie =>
-          <div key={movie.id}>{movie.title}</div>
+          <div key={movie.id}>{movie.data.title}</div>
         )}
       </div>
     );
