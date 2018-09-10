@@ -116,7 +116,7 @@ router.get('/', function(req, res, next) {
     id: 12,
     data: {
       title: "Shrek",
-      type: 'comedy',
+      type: 'animated',
       year: '2001',
       rating: '',
       user_ratings: '',
@@ -128,6 +128,76 @@ router.get('/', function(req, res, next) {
       title: "Deadpol",
       type: 'comedy',
       year: '2016',
+      rating: '',
+      user_ratings: '',
+    }
+  },
+  {
+    id: 14,
+    data: {
+      title: "Django",
+      type: 'western',
+      year: '2012',
+      rating: '',
+      user_ratings: '',
+    }
+  },
+  {
+    id: 15,
+    data: {
+      title: "The Pianist",
+      type: 'drama',
+      year: '2002',
+      rating: '',
+      user_ratings: '',
+    }
+  },
+  {
+    id: 16,
+    data: {
+      title: "Shutter Island",
+      type: 'thriller',
+      year: '2010',
+      rating: '',
+      user_ratings: '',
+    }
+  },
+  {
+    id: 17,
+    data: {
+      title: "The Lion King",
+      type: 'animated',
+      year: '1994',
+      rating: '',
+      user_ratings: '',
+    }
+  },
+  {
+    id: 18,
+    data: {
+      title: "Zootopia",
+      type: 'animated',
+      year: '2016',
+      rating: '',
+      user_ratings: '',
+    }
+  },
+  {
+    id: 19,
+    data: {
+      title: "Unforgiven",
+      type: 'western',
+      year: '1992',
+      rating: '',
+      user_ratings: '',
+    }
+  },
+  {
+    id: 20,
+    data: {
+      title: "Scarface",
+      type: 'drama',
+      year: '1983',
       rating: '',
       user_ratings: '',
     }
