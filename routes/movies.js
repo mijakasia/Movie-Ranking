@@ -131,7 +131,7 @@ router.get('/', function(req, res, next) {
       year: '2001',
       rating: '',
       user_ratings: '',
-      descritpion: 'When a green ogre named Shrek discovers his swamp has been \'swamped\' with all sorts of fairytale creatures by the scheming Lord Farquaad, Shrek sets out with a very loud donkey by his side to 'persuade' Farquaad to give Shrek his swamp back. Instead, a deal is made. Farquaad, who wants to become the King, sends Shrek to rescue Princess Fiona, who is awaiting her true love in a tower guarded by a fire-breathing dragon.'
+      description: 'When a green ogre named Shrek discovers his swamp has been \'swamped\' with all sorts of fairytale creatures by the scheming Lord Farquaad, Shrek sets out with a very loud donkey by his side to \'persuade\' Farquaad to give Shrek his swamp back. Instead, a deal is made. Farquaad, who wants to become the King, sends Shrek to rescue Princess Fiona, who is awaiting her true love in a tower guarded by a fire-breathing dragon.'
     }
   },
   {
@@ -153,8 +153,7 @@ router.get('/', function(req, res, next) {
       year: '2012',
       rating: '',
       user_ratings: '',
-      description: '
-         In 1858, a bounty hunter named Schultz seeks out a slave named Django and buys him because he needs him to find some men he is looking for. After finding them, Django wants to find his wife, Brunhilde, who along with him were sold separately by his former owner for trying to escape. Schultz offers to help him if he chooses to stay with him and be his partner. Eventually they learn that she was sold to a plantation in Mississipi.'
+      description: 'In 1858, a bounty hunter named Schultz seeks out a slave named Django and buys him because he needs him to find some men he is looking for. After finding them, Django wants to find his wife, Brunhilde, who along with him were sold separately by his former owner for trying to escape. Schultz offers to help him if he chooses to stay with him and be his partner. Eventually they learn that she was sold to a plantation in Mississipi.'
     }
   },
   {
@@ -176,8 +175,7 @@ router.get('/', function(req, res, next) {
       year: '2010',
       rating: '',
       user_ratings: '',
-      description: '
-         It\'s 1954, and up-and-coming U.S. marshal Teddy Daniels is assigned to investigate the disappearance of a patient from Boston\'s Shutter Island Ashecliffe Hospital. He\'s been pushing for an assignment on the island for personal reasons, but before long he wonders whether he hasn\'t been brought there as part of a twisted plot by hospital doctors whose radical treatments range from unethical to illegal to downright sinister.'
+      description: 'It\'s 1954, and up-and-coming U.S. marshal Teddy Daniels is assigned to investigate the disappearance of a patient from Boston\'s Shutter Island Ashecliffe Hospital. He\'s been pushing for an assignment on the island for personal reasons, but before long he wonders whether he hasn\'t been brought there as part of a twisted plot by hospital doctors whose radical treatments range from unethical to illegal to downright sinister.'
     }
   },
   {
