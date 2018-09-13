@@ -115,7 +115,7 @@ router.get('/', function(req, res, next) {
   {
     id: 11,
     data: {
-      title: "The Silence od the Lambs",
+      title: "The Silence of the Lambs",
       type: 'thriller',
       year: '1991',
       rating: '',
