@@ -13,7 +13,7 @@ class App extends Component {
   async componentDidMount() {
     const response = await fetch('/movies')
     if (response.status >= 400) {
-      this.setState({errorStatus: 'Error fetching groceries'});
+      this.setState({errorStatus: 'Error fetching movies'});
     } else {
       response.json().then(data => {
         this.setState({movies: data})

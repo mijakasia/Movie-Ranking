@@ -30,7 +30,6 @@ describe('App', () => {
     it('sets the state componentDidMount on error', async () => {
       const renderedComponent = await shallow(<App />)
       await renderedComponent.update()
-      console.log(renderedComponent.state('errorStatus'));
       expect(renderedComponent.state('errorStatus')).toEqual('Error fetching movies')
     })
   })
