@@ -2,24 +2,29 @@ import React, { Component } from 'react';
 import '../styles/App.css';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       movies: [],
-    };
+    }
   }
 
-  componentDidMount() {
-    fetch('/movies')
-      .then(res => res.json())
-      .then(movies => this.setState({ movies }));
+  async componentDidMount() {
+    const response = await fetch('/movies')
+    if (response.status >= 400) {
+      console.log('error');
+    } else {
+      response.json().then(data => {
+        this.setState({movies: data})
+      });
+    }
   }
 
   render() {
     return (
       <div className="App">
         <h1>Movies</h1>
-        {this.state.movies.map(movie =>
+        {this.state.movies.length > 0 && this.state.movies.map(movie =>
           <div key={movie.id}>{movie.data.title}</div>
         )}
       </div>
