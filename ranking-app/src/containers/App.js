@@ -4,8 +4,8 @@ import '../styles/App.css';
 import fetchMovies from './apiCalls.js';
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       movies: [],
       errorStatus: '',
