@@ -1,8 +1,8 @@
 export const fetchMovies = jest.fn()
   .mockImplementationOnce(() => ({
     movies: [
-      { id: 1489863729151, name: 'Rutabagas', quantity: 10, purchased: false, starred: false },
-      { id: 1489863740047, name: 'Beef Jerky', quantity: 1000, purchased: false, starred: false },
+      { id: 1, data: { title: '', type: '', year: '', rating: '', user_ratings: '', description: ''}},
+      { id: 2, data: { title: '', type: '', year: '', rating: '', user_ratings: '', description: ''}},
     ],
   }))
   .mockImplementationOnce(() => {
