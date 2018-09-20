@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import '../styles/App.css';
+
+import '../../styles/App.css';
+import fetchMovies from './apiCalls.js';
 
 class App extends Component {
   constructor() {
@@ -11,13 +13,11 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const response = await fetch('/movies')
-    if (response.status >= 400) {
-      this.setState({errorStatus: 'Error fetching movies'});
-    } else {
-      response.json().then(data => {
-        this.setState({movies: data})
-      });
+    try {
+      const data = await fetchMovies()
+      this.setState({movies: data})
+    } catch(err) {
+      this.setState({errorStatus: err.message})
     }
   }
 
@@ -25,7 +25,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Movies</h1>
-        {this.state.movies.length > 0 && this.state.movies.map(movie =>
+        {this.state.movies.map(movie =>
           <div key={movie.id}>{movie.data.title}</div>
         )}
       </div>
