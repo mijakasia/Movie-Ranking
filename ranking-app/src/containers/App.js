@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import '../../styles/App.css';
+import '../styles/App.css';
 import fetchMovies from './apiCalls.js';
 
 class App extends Component {
