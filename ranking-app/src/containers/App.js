@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
-import './App.css';
+
+import '../styles/App.css';
+import fetchMovies from './apiCalls.js';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       movies: [],
-    };
+      errorStatus: '',
+    }
   }
 
-  componentDidMount() {
-    fetch('/movies')
-      .then(res => res.json())
-      .then(movies => this.setState({ movies }));
+  async componentDidMount() {
+    try {
+      const data = await fetchMovies()
+      this.setState({movies: data})
+    } catch(err) {
+      this.setState({errorStatus: err.message})
+    }
   }
 
   render() {
