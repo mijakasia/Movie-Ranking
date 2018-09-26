@@ -1,6 +1,7 @@
 {
   "name": "ranking-app",
   "version": "0.1.0",
+  "sasslintConfig": "./styles/.sass-lint.yml",
   "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",
@@ -94,6 +95,7 @@
   },
   "devDependencies": {
     "node-sass": "^4.9.3",
+    "sass-lint": "^1.12.1",
     "sass-loader": "^7.1.0"
   }
 }
