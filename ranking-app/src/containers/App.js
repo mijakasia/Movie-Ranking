@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import '../styles/App.css';
 import fetchMovies from './apiCalls.js';
 
 class App extends Component {
@@ -23,7 +22,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <h1>Movies</h1>
         {this.state.movies.map(movie =>
           <div key={movie.id}>{movie.data.title}</div>
